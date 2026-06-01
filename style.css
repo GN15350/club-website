@@ -1,0 +1,760 @@
+body {
+	background-color: #EFEFEF;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100svh;
+	overflow-x: hidden;
+}
+
+body.no-scroll {
+	position: fixed;
+	inset: 0;
+	width: 100%;
+	height: 100svh;
+	overflow: hidden;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	background-color: black;
+	width: 100%;
+	height: 100vh;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+	font-weight: bolder;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Barlow';
+	src: url('fonts/Barlow-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Barlow-bold';
+	src: url('fonts/Barlow-Black.ttf') format('truetype');
+	font-weight: bolder;
+	font-style: normal;
+}
+
+.header {
+	color: black;
+	position: fixed;
+	width: 100%;
+	height: 10vh;
+	top: 0;
+	z-index: 6;
+	padding: 0;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Montserrat;
+	color: white;
+}
+
+.header.scrolled {
+	background-color: rgb(48, 48, 48);
+}
+  
+.header-right {
+	display: flex;
+	gap: 2vh;
+	right: 2vh;
+	position: fixed;
+}
+
+.logo-desktop {
+	max-width: 9vh;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	left: 2vh;
+	position: fixed;
+	cursor: pointer;
+}
+
+.mainPhoto {
+	width: 100%;
+	height: 100vh;
+	opacity: 0.7;
+	z-index: 2;
+	position: absolute;
+	object-fit: cover; 
+}
+
+.headerLinks {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+.main-layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	z-index: 3;
+}
+
+
+.littleTitle {
+	color: white;
+	z-index: inherit;
+	font-family: Barlow;
+	font-weight: bold;
+	font-size: 3vh;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.title {
+	color: white;
+	z-index: inherit;
+	font-family: Barlow-bold;
+	font-size: 13vh;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 5vh;
+}
+
+.viewAll {
+	color: white;
+	z-index: inherit;
+	background-color: #0033A0;
+	border: none;
+	font-family: Barlow;
+	cursor: pointer;
+	border-radius: 74px;
+	width: 25vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	font-size: 2vh;
+}
+
+.logo {
+	padding: 2vh;
+	width: 50vh;
+}
+
+.layout2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #EFEFEF;
+}
+
+.heading {
+	color: #0033A0;
+	font-family: Barlow-bold;
+	font-size: 5vh;
+	margin-left: 10vh;
+	margin-bottom: 0vh;
+}
+
+.ourStory{
+	color: black;
+	z-index: 1;
+	max-width: 80vh;
+	font-family: Barlow;
+	margin-left: 10vh;
+	font-size: 3.5vh;
+}
+
+
+.heading2 {
+	color: white;
+	font-family: Barlow-bold;
+	font-size: 5vh;
+	margin-left: 10vh;
+	margin-bottom: 0vh;
+}
+
+.clubDescription{
+	color: white;
+	z-index: 1;
+	max-width: 80vh;
+	font-family: Barlow;
+	margin-left: 10vh;
+	font-size: 3.5vh;
+}
+
+
+.layout3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+}
+
+.clubJoin{
+	color: black;
+	width: 90%;
+	font-family: Barlow;
+	font-size: 3.5vh;
+	text-align: center;
+}
+
+.layout4 {
+	padding: 0;
+	margin: 0;
+	background-color: #8A644F;
+	z-index: 2;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.layout6 {
+	padding: 0;
+	margin: 0;
+	background-color: #28231F;
+	z-index: 2;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.vertical2 {
+	max-width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.halfPhoto {
+	width: 50%;
+	height: auto;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover; 
+}
+
+.viewAll2 {
+	color: #A97358;
+	z-index: inherit;
+	background-color: white;
+	border: none;
+	font-family: Barlow;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 74px;
+	width: 25vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	font-size: 2vh;
+	margin-left: 10vh;
+	margin-bottom: 1vh
+}
+
+.viewAll4 {
+	color: #335364;
+	z-index: inherit;
+	background-color: white;
+	border: none;
+	font-family: Barlow;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 74px;
+	width: 25vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	font-size: 2vh;
+	margin-left: 10vh;
+	margin-bottom: 2vh
+}
+
+
+.layout5 {
+	padding: 0;
+	margin: 0;
+	background-color: #252E40;
+	z-index: 2;
+	height: fit-content;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.vertical3 {
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: end;
+	align-items: end;
+}
+
+.heading3 {
+	color: white;
+	font-family: Barlow-bold;
+	font-size: 5vh;
+	margin-right: 10vh;
+	margin-bottom: 0vh;
+}
+
+.clubDescription2 {
+	color: white;
+	z-index: 1;
+	max-width: 80vh;
+	font-family: Barlow;
+	margin-right: 10vh;
+	font-size: 3.5vh;
+}
+
+.viewAll3 {
+	color: #252E40;
+	z-index: inherit;
+	background-color: white;
+	border: none;
+	font-family: Barlow;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 74px;
+	width: 25vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	font-size: 2vh;
+	margin-right: 10vh;
+	margin-bottom: 1vh
+}
+
+
+.footer {
+	height: 15vh;
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(48, 48, 48);
+	color: white;
+	font-family: Barlow;
+	align-items: center;
+}
+
+.logoFooter {
+	max-width: 10vh;
+	height: auto;
+	object-fit: cover; 
+	left: 10vh;
+	margin-left: 2vh;
+}
+
+.websiteName {
+	font-size: 3svh;
+	display: flex;
+	margin-left: 2vh;
+}
+
+.verticalFooter {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 5vh;
+	padding-right: 3vh;
+}
+
+.footerTitle {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.footerRow {
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	padding-right: 2vh;
+	gap: 6vh;
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+}
+
+.popup-overlay {
+	display: none;
+	position: fixed;
+	inset: 0;
+	background-color: rgba(48, 48, 48, 0.6);
+	z-index: 9;
+}
+
+.popup-overlay.show {
+	display: block;
+}
+
+.announcement-popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	color: black;
+	width: min(80vw, 560px);
+	border-radius: 12px;
+	padding: 4vh;
+	z-index: 10;
+	text-align: center;
+	font-family: Barlow;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.announcement-popup.show {
+	display: block;
+}
+
+.announcement-text {
+	margin: 0 0 3vh;
+	font-size: 2.6vh;
+	line-height: 1.4;
+}
+
+.announcement-close {
+	border: none;
+	background-color: #0033A0;
+	color: white;
+	font-family: Barlow;
+	border-radius: 50px;
+	padding: 1vh 4vh;
+	font-size: 2vh;
+	cursor: pointer;
+}
+
+.x {
+	display: none;
+	position: absolute;
+}
+
+.bar {
+	display: none;
+}
+
+.xButton {
+	display: none;
+}
+
+.logo-mobile {
+	display: none;
+}
+
+.header-background {
+	display: none;
+}
+
+
+
+@media (max-width: 800px){
+.header {
+	background-color: rgb(48, 48, 48);
+	min-height: 100svh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 60%;
+	right: 0;
+	z-index: 6;
+
+	padding-left:3.5vh;
+
+	transform: translateX(100%);
+	transition: transform 0.3s ease;
+}
+
+.header.open {
+	transform: translateX(0);
+}
+
+.header-background.show {
+	bottom: 0;
+	top: 0;
+	position: fixed;
+	z-index: 5;
+	left: 0;
+	width: 100%;
+	height: 8vh;
+	display: block;
+	background-color: rgb(48, 48, 48);
+}
+
+.header-right {
+	display: flex;
+	flex-direction: column;
+	top: 10vh;
+	text-align: end;
+	right: 3vh;
+	background-color: transparent;
+	font-size: 3vh;
+	gap: 3vh;
+	transition: transform 0.3s ease;
+	position: fixed;
+}
+
+.ourStory {
+	margin: 2vh;
+}
+
+.heading {
+	margin: 0;
+}
+
+.heading2 {
+	margin: 0;
+	margin-top: 2vh;
+}
+
+.clubDescription {
+	margin: 2vh;
+	margin-top: 0vh;
+	margin-bottom: 3.5vh;
+}
+
+.viewAll2 {
+	margin: 0;
+	margin-bottom: 2vh;
+}
+
+.viewAll3 {
+	margin: 0;
+	margin-bottom: 2vh;
+}
+
+.viewAll4 {
+	margin: 0;
+	margin-bottom: 2vh;
+}
+
+
+.mainPhoto {
+	object-fit: cover;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+}
+
+.overlay {
+	position: fixed;
+	display: block;
+	background-color: #292929;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	z-index: 5;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+ .overlay.show {
+	pointer-events: auto;
+	display: block;
+
+	opacity: 0.7;
+  }
+
+.logo-mobile {
+	max-width: 8vh;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	left: 2vh;
+	top: 2vh;
+	position: fixed;
+	cursor: pointer;
+	z-index: 6;
+}
+
+.x {
+	display: block;
+	position: absolute;
+	z-index: 7;
+	top: 2vh;
+	right: 2vh;
+	max-width: 5vh;
+}
+
+.xButton {
+	display: block;
+}
+
+.bar {
+	display: block;
+	position: fixed;
+	width: 3vh;
+	top: 3vh;
+	right: 2vh;
+	z-index: 6;
+}
+
+.logo-desktop {
+	display: none;
+}
+
+.barButton {
+	background-color: transparent;
+	border: none;
+	z-index: 6;
+	position: absolute;
+}
+
+.xButton {
+	background-color: transparent;
+	border: none;
+	z-index: 6;
+}
+
+.title {
+	text-align: center;
+	width: 100%;
+}
+
+.layout2 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+body.no-scroll {
+	position: fixed;
+	overflow: hidden;
+	height: 100vh;
+}
+
+body, html {
+	width: 100%;
+	min-width: 100%;
+	background-color: rgb(48, 48, 48);
+}
+
+.layout3 {
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+	background-color: #EFEFEF;
+}
+
+.logo {
+	width: 40vh;
+}
+
+.layout4 {
+	flex-direction: column;
+}
+
+.layout5 {
+	flex-direction: column-reverse;
+	width: 100%;
+}
+
+.layout6 {
+	flex-direction: column;
+}
+
+.halfPhoto {
+	width: 100%;
+}
+.vertical2 {
+	text-align: center;
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 0vh;
+	margin: 2vh;
+}
+
+.vertical3 {
+	text-align: center;
+	width: auto;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 4vh;
+}
+
+.clubDescription2 {
+	padding: 0;
+	margin: 3vh;
+}
+
+.heading3 {
+	margin: 0;
+}
+
+.footer {
+	width: 100%;
+	height: fit-content;
+	padding-top: 4vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgb(48, 48, 48);
+	text-align: center;
+}
+
+.verticalFooter {
+	top: 0;
+	padding: 0;
+	margin: 0;
+   min-width: fit-content;
+}
+.footerRow {
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	gap: 0;
+}
+.websiteName {
+	margin: 0;
+	padding: 0;
+}
+.logoFooter {
+	margin-left: -1vh;
+	padding: 0;
+	left: 0;
+	padding-bottom: 0.5vh;
+}
+.footerP {
+	margin-top: 1vh;
+}
+
+.footerTitle {
+	padding-top: 3vh;
+}
+
+.littleTitle {
+	margin-top: 0;
+}
+}
+#info {
+	scroll-margin-top: 27vh
+}
+
+#info {
+	scroll-margin-top: 27vh;
+}

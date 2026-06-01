@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="category.css">
+		<title>Home Page</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	</head>
+
+	<body data-category="service">
+		<div id="overlay" class="overlay"></div>
+		<img class="mainPhoto" src="photos/photoAllClubs.png" alt="photo-clubs">
+		<div class="background"></div>
+		<button class="barButton" id="bar">
+		<img class="bar" src="elements/bar.png" alt="bar">
+	</button>
+
+	<img class="logo-mobile" src="logos/logo-main.png" alt="logo-main" onclick="window.location.href='index.html'">
+	<div class="header-background"></div>
+		 <div class="header">
+		<img class="logo-desktop" src="logos/logo-main.png" alt="logo-main" onclick="window.location.href='index.html'">
+		<button class="xButton" id="x">
+			<img class="x" src="elements/x.png" alt="x">
+		</button>
+			<div class="header-right">
+				<a class="headerLinks" onclick="window.location.href='index.html'">HOME</a>
+				<a class="headerLinks" onclick="window.location.href='clubDirectory.html'">CLUBS</a>
+				<a class="headerLinks" onclick="window.location.href='createClub.html'">CREATE A CLUB</a>
+				<a class="headerLinks" onclick="window.location.href='flyers.html'">FLYERS</a>
+				<!-- <a class="headerLinks" onclick="window.location.href='news.html'">NEWS</a> -->
+				<a class="headerLinks" onclick="window.location.href='form.html'">FORM</a>
+				<a class="headerLinks" href="https://docs.google.com/document/d/1cKcL1atNX97feReQ8cut6ryNbomXgZlwNOYV_gkM_ek/edit?tab=t.0#heading=h.oez40u5bwcus" target="_blank">SLIP</a>
+				<!-- <a class="headerLinks" onclick="window.location.href='resources.html'">RESOURCES</a> -->
+			</div>
+		</div>
+
+		<div class="main-layout">
+			<p class="title">Service, Law, and Leadership Clubs</p>            <div class="search-container">
+				<form action="">
+					<i class="fa fa-search"></i>
+					<input id="clubSearch"  class="search" type="text" placeholder="Search..." name="search">
+				</form>
+			  </div>
+			</div>
+		</div>
+
+		<div class="grid">
+			<div id="clubButtons"></div>
+		</div>
+		<div id = "clubInfo" class = "infoPanel">
+			
+		</div>
+
+		<footer class="footer">
+			<img class="logoFooter" src="logos/logo-main.png" alt="logo">
+			<p class="websiteName">Frisco High<br>School Clubs</p>
+
+			<div class="footerRow">
+				<div class="verticalFooter">
+					<p class="footerTitle">Location</p>
+					<p class="footerP">6401 Parkwood Boulevard<br>Frisco, Texas 75034</p>
+				</div>
+
+				<div class="verticalFooter">
+					<p class="footerTitle">Contact</p>
+					<p class="footerP">469.633.5550<br>fhs@friscoisd.org</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+		<script src="category.js"></script>
+	</body>
+</html>

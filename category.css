@@ -1,0 +1,524 @@
+body {
+	background-color: #EFEFEF;
+	padding: 0;
+	margin: 0;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	background-color: black;
+	width: 100%;
+	height: 100vh;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+	font-weight: bolder;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Barlow';
+	src: url('fonts/Barlow-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Barlow-bold';
+	src: url('fonts/Barlow-Black.ttf') format('truetype');
+	font-weight: bolder;
+	font-style: normal;
+}
+
+.header {
+	color: black;
+	position: fixed;
+	width: 100%;
+	height: 7vh;
+	top: 0;
+	z-index: 6;
+	padding: 0;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Montserrat;
+	color: white;
+}
+
+.header.scrolled {
+	background-color: rgb(48, 48, 48);
+}
+  
+.header-right {
+	display: flex;
+	gap: 2vh;
+	right: 2vh;
+	position: fixed;
+}
+
+.logo-desktop {
+	max-width: 9vh;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	left: 2vh;
+	position: fixed;
+	cursor: pointer;
+}
+
+.mainPhoto {
+	width: 100%;
+	height: 100vh;
+	opacity: 0.7;
+	z-index: 2;
+	position: absolute;
+	object-fit: cover;
+}
+
+.headerLinks {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+.main-layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	z-index: 3;
+}
+
+
+.littleTitle {
+	color: white;
+	z-index: inherit;
+	font-family: Barlow;
+	font-weight: bold;
+	font-size: 3vh;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.title {
+	color: white;
+	z-index: inherit;
+	font-family: Barlow-bold;
+	font-size: 13vh;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0vh;
+}
+
+
+.logo {
+	padding: 2vh;
+	width: 50vh;
+}
+
+
+.footer {
+	height: 15vh;
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(48, 48, 48);
+	color: white;
+	font-family: Barlow;
+	align-items: center;
+}
+
+.logoFooter {
+	max-width: 10vh;
+	height: auto;
+	object-fit: cover;
+	left: 10vh;
+	margin-left: 2vh;
+}
+
+.websiteName {
+	font-size: 3svh;
+	display: flex;
+	margin-left: 2vh;
+}
+
+.verticalFooter {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 5vh;
+	padding-right: 3vh;
+}
+
+.footerTitle {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.footerRow {
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	padding-left: 5vh;
+	padding-right: 3vh;
+}
+#clubInfo ul {
+  display: inline-block;   
+  text-align: left;        
+  padding-left: 1.2em;     
+  margin: 0 auto;          
+}
+
+#clubInfo {
+  text-align: center; 
+  width: 50%;     
+  
+}
+.clubLogo {
+  width: 100px;       
+  height: 100px;      
+  object-fit: cover; 
+  margin-right: 8px;  
+  vertical-align: middle; 
+  margin-bottom: 5px;
+  
+}
+#clubButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+#clubButtons button {
+	flex: 0 0 180px;
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  background: none; 
+}
+.infoPanel {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  max-width: 90%;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: top 1s ease;
+  z-index: 1001;
+}
+.infoPanel.show {
+  top: 50%;
+
+}
+#clubButtons button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.closeButton:hover {
+  color: red;
+}
+
+
+.overlay {
+	position: fixed;
+	display: block;
+	background-color: #292929;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+ .overlay.show {
+	pointer-events: auto;
+	display: block;
+
+	opacity: 0.7;
+  }
+
+.x {
+	display: none;
+	position: absolute;
+}
+
+.bar {
+	display: none;
+}
+
+.xButton {
+	display: none;
+}
+
+.logo-mobile {
+	display: none;
+}
+
+.header-background {
+	display: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px){ 
+.mainPhoto {
+  object-fit: cover;
+}
+.main-layout {
+  text-align: center;
+}
+.title {
+  font-size: 10vh
+}
+
+.littleTitle {
+  font-size: 2.5vh;
+}
+
+
+
+
+
+.header-right {
+	display: flex;
+	flex-direction: column;
+	top: 10vh;
+	text-align: end;
+	top: 13vh;
+	right: 8vh;
+	background-color: transparent;
+	font-size: 3vh;
+	gap: 3vh;
+	transition: transform 0.3s ease;
+}
+
+
+body, html {
+  background-color: rgb(48, 48, 48);
+}
+.header {
+	background-color: rgb(48, 48, 48);
+	min-height: 100svh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 60%;
+	right: 0;
+	z-index: 6;
+
+	transform: translateX(100%);
+	transition: transform 0.3s ease;
+}
+
+.header.open {
+	transform: translateX(0);
+}
+
+.header-background.show {
+	bottom: 0;
+	top: 0;
+	position: fixed;
+	z-index: 5;
+	left: 0;
+	width: 100%;
+	height: 8vh;
+	display: block;
+	background-color: rgb(48, 48, 48);
+}
+  .logo-mobile {
+	max-width: 8vh;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	left: 2vh;
+	top: 2vh;
+	position: fixed;
+	cursor: pointer;
+	z-index: 6;
+}
+
+.x {
+	display: block;
+	position: absolute;
+	z-index: 7;
+	top: 2vh;
+	right: 2vh;
+	max-width: 5vh;
+}
+
+.xButton {
+	display: block;
+}
+
+.bar {
+	display: block;
+	position: fixed;
+	width: 3vh;
+	top: 3vh;
+	right: 2vh;
+	z-index: 6;
+}
+
+.logo-desktop {
+	display: none;
+}
+
+.barButton {
+	background-color: transparent;
+	border: none;
+	z-index: 6;
+	position: absolute;
+}
+
+.xButton {
+	background-color: transparent;
+	border: none;
+	z-index: 6;
+}
+
+.title {
+	text-align: center;
+	width: 100%;
+}
+body.no-scroll {
+	position: fixed;
+	overflow: hidden;
+	height: 100vh;
+}
+
+body, html {
+	width: 100%;
+	min-width: 100%;
+	background-color: rgb(48, 48, 48);
+}
+.footer {
+	width: 100%;
+	height: fit-content;
+	padding-top: 4vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgb(48, 48, 48);
+	text-align: center;
+}
+
+.verticalFooter {
+	top: 0;
+	padding: 0;
+	margin: 0;
+   min-width: fit-content;
+}
+.footerRow {
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	gap: 0;
+}
+.websiteName {
+	margin: 0;
+	padding: 0;
+}
+.logoFooter {
+	margin-left: -1vh;
+	padding: 0;
+	left: 0;
+	padding-bottom: 0.5vh;
+}
+.footerP {
+	margin-top: 1vh;
+}
+
+.footerTitle {
+	padding-top: 3vh;
+}
+
+.littleTitle {
+	margin-top: 0;
+}
+
+
+
+
+
+
+.grid {
+  background-color: #EFEFEF;
+}
+}
+
+
+
+.search-container {
+	z-index: 6;
+	width: fit-content;
+}
+
+.search {
+	width: 25vh;
+	height: 3vh;
+	border-radius: 30px;
+	border: solid white 3px;
+	background-color: transparent;
+	color: white;
+	padding-right: 1vh;
+	padding-left: 3vh;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.search-container i {
+	color: white;
+	position: absolute;
+	padding-left: 1.2vh;
+	padding-top: 1.1vh;
+}
+
+.club-extra-button {
+	margin: 2vh;
+	padding: 1.5vh;
+	padding-left: 3vh;
+	padding-right: 3vh;
+	border-radius: 50px;
+	border: none;
+	color: white;
+	background-color: black;
+	font-family: Barlow;
+}
